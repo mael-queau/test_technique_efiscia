@@ -51,7 +51,7 @@ function hasAllNumbers(input: number[]): void {
     console.error("There is a line without 9 numbers in it!");
     // Exit the function if the input isn't valid
     // TODO: This should be a failure, not just a return
-    return;
+    failure();
   }
   // Iterate through the 9 numbers, and if one isn't found, then the array isn't valid
   for (let i = 1; i <= 9; i++) if (input.indexOf(i) == -1) failure();
